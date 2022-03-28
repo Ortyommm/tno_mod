@@ -221,7 +221,7 @@ public class SoldierBossEntity extends VindicatorEntity {
             LivingEntity target = this.parentEntity.getAttackTarget();
 //            System.out.println(this);
             double lvt_2_1_ = 64.0D;
-            if (target.getPosY() - this.parentEntity.getPosY() > 6 || target.getDistanceSq(this.parentEntity) < 4096.0D && target.getDistanceSq(this.parentEntity) > 256.0D/* && this.parentEntity.canEntityBeSeen(target)*/) {
+            if (target.getPosY() - this.parentEntity.getPosY() > 4 || target.getDistanceSq(this.parentEntity) < 4096.0D && target.getDistanceSq(this.parentEntity) > 256.0D/* && this.parentEntity.canEntityBeSeen(target)*/) {
                 World world = this.parentEntity.world;
                 ++this.attackTimer;
 //                world.playSound((PlayerEntity)null, this.parentEntity.getPosition(), new SoundEvent("rocket"), "entity", 10, 2.0f);
