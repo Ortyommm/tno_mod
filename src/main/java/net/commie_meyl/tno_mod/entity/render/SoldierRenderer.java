@@ -11,10 +11,8 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class SoldierRenderer extends MobRenderer<SoldierEntity, PlayerModel<SoldierEntity>>
 {
-    protected static final String[] textures = {"textures/entity/wehrmacht.png", "textures/entity/wehrmacht1.png", "textures/entity/wehrmacht2.png"};
 
-    protected static ResourceLocation TEXTURE =
-            new ResourceLocation(TnoMod.MOD_ID, textures[0]);
+
     public SoldierRenderer(EntityRendererManager renderManagerIn) {
         super(renderManagerIn, new PlayerModel<>(0.0f, false), 0.7F);
     }

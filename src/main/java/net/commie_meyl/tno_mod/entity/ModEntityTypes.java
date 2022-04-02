@@ -19,13 +19,13 @@ public class ModEntityTypes {
     public static final RegistryObject<EntityType<SoldierEntity>> SOLDIER =
             ENTITY_TYPES.register("soldier",
                     () -> EntityType.Builder.create(SoldierEntity::new,
-                                    EntityClassification.MONSTER).size(1f, 3f)
+                                    EntityClassification.MONSTER).size(1f, 1.9f)
                             .build(new ResourceLocation(TnoMod.MOD_ID, "soldier").toString()));
 
     public static final RegistryObject<EntityType<SoldierBossEntity>> SOLDIER_BOSS =
             ENTITY_TYPES.register("soldier_boss",
                     () -> EntityType.Builder.create(SoldierBossEntity::new,
-                                    EntityClassification.MONSTER).size(1f, 3f)
+                                    EntityClassification.MONSTER).size(1f, 1.9f)
                             .build(new ResourceLocation(TnoMod.MOD_ID, "soldier_boss").toString()));
 
 

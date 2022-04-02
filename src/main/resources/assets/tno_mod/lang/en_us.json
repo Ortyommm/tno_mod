@@ -1,4 +1,5 @@
 {
   "entity.tno_mod.soldier": "Repressor",
-  "entity.soldier": "Repressor"
+  "entity.tno_mod.soldier_boss": "Repressor boss"
+
 }
