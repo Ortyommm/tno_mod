@@ -14,7 +14,9 @@ import java.util.List;
 
 public class ModEntityGeneration {
     public static void onEntitySpawn(final BiomeLoadingEvent event) {
-        addEntityToAllBiomes(event.getSpawns(), ModEntityTypes.SOLDIER.get(), 10, 1, 3);
+//        addEntityToAllBiomes(event.getSpawns(), ModEntityTypes.SOLDIER.get(), 10, 1, 3);
+        addEntityToAllBiomesExceptThese(event, ModEntityTypes.SOLDIER.get(), 6, 1, 3, Biomes.OCEAN, Biomes.RIVER);
+
     }
 
     private static void addEntityToAllBiomesExceptThese(BiomeLoadingEvent event, EntityType<?> type,

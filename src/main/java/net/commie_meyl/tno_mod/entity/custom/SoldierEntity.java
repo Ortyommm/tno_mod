@@ -68,7 +68,7 @@ public class SoldierEntity extends SoldierBase {
     @Override
     protected void registerGoals() {
         super.registerGoals();
-        this.goalSelector.addGoal(7, new SoldierBase.FireballAttackGoal(this, ThreadLocalRandom.current().nextInt(1, 4), 1));
+        this.goalSelector.addGoal(7, new SoldierBase.FireballAttackGoal(this, ThreadLocalRandom.current().nextInt(1, 4), 2));
     }
 
 
